@@ -28,7 +28,11 @@ export default async function Page(props: {
             ...defaultMdxComponents,
             ImageZoom,
             img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
-              <ImageZoom {...props} src={props.src as string} />
+              <ImageZoom
+                {...props}
+                src={props.src as string}
+                alt={props.alt || "Documentation image"}
+              />
             ),
           }}
         />
