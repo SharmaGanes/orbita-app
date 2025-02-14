@@ -1,0 +1,152 @@
+---
+title: "Frequently Asked Questions"
+description: "Common questions about using the Orbita App"
+---
+
+import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
+
+## Device and Access Questions
+
+<Accordions>
+  <Accordion title="My participant does not have a smartphone. Can they use any other device?">
+    Participants may use any device with a web browser and internet access. For example:
+
+    - Windows PC
+    - Apple Mac computer
+    - Linux computer
+    - Android tablet
+    - Apple iPad
+    - Android smartphone
+    - Apple iPhone
+
+    With Apple devices, use Safari. With other devices, use Chrome.
+
+  </Accordion>
+
+{" "}
+
+<Accordion title="Should the participant close the app after using it?">
+  It does not matter whether the participant closes the app or leaves it open
+  and goes to a different app. Just make sure they know how to find the app
+  again.
+</Accordion>
+
+  <Accordion title="I have a logout button on my screen. Why does the participant not have a logout button?">
+    Participants generally do not need to log out. If they log out, they will need to log in again to enter more data and will likely call you for their ID and password. To avoid accidental logout, the logout button is kept out of immediate sight. If they need to log out, ask them to:
+
+    1. Click the Help button at the bottom of their screen
+    2. Click the Advanced button at the bottom of the help section
+    3. Click the Log out button
+
+  </Accordion>
+
+  <Accordion title="Can my participant use a different device on some occasions?">
+    Yes, they can use any number of devices. They follow the same process on each device:
+
+    1. Go to the app website
+    2. Add the app to their Home Screen
+    3. Open the app
+    4. Enter their ID and password
+
+    There is no need to log out on one device before using another. The devices keep in sync automatically if connected to the internet.
+
+    Make a note in your CRF of the reason (e.g., "Participant wants the app on another phone so they can use whichever is more convenient"). The server logs will show that different devices were used to enter data (even with the same ID and password), so you will know why it happened if ever queried.
+
+  </Accordion>
+
+  <Accordion title="My participant has changed their phone to a new one">
+    Follow the same process on the new phone:
+
+    1. Go to the app website
+    2. Add the app to their Home Screen
+    3. Open the app
+    4. Enter their ID and password
+
+    The new phone will pick up where the old one left off. If they are just discarding their old phone, there is no need to uninstall the app. However, if they are giving the phone to someone else, they should delete the app by long-pressing the app icon on the home screen and choosing "Uninstall," "Delete bookmark," "Remove," or similar.
+
+    Make a note in your CRF. The server logs will note that different devices were used to enter data, so if this is queried during an audit, you will know why it happened.
+
+  </Accordion>
+</Accordions>
+
+## Trial Management Questions
+
+<Accordions>
+  <Accordion title="My participant has finished the trial">
+    1. First check that they are up to date on data entry (e.g., look at their phone during a final study visit or check your Participant List)
+    2. Go to your Participant List, click Configure, and scroll down to the bottom
+    3. Click Exited the trial, and follow the instructions that appear (this includes deleting the app from the participant's phone)
+
+    They will no longer appear on your Participant List by default. To see these participants again, click Don't exclude at the bottom of the list.
+
+  </Accordion>
+
+  <Accordion title="Why does the Participant List have buttons named 'Don't Exclude' rather than 'Include'?">
+    For simplicity, under normal use of the app you would:
+
+    - Not want to see (fake) practice participants you created during staff training
+    - Not want to see participants who have exited the trial already (no need to check for data entry)
+
+    By default, these participants will not be listed. However, a participant might fall into both categories. Some staff find it confusing to choose Include a participant group and yet not see them appear. By naming the button Don't exclude, staff are reminded that those participants are not excluded by that criterion, though they might still be excluded by another.
+
+  </Accordion>
+
+{" "}
+
+<Accordion title="My participant is withdrawing from the study early">
+  Go to the Participant List, click Configure, scroll down to the bottom, and
+  mark them as having Exited the trial. This means they will no longer appear on
+  your Participant List by default. Ideally, they should delete the app icon
+  from their phone, but there is no harm if they do not (for instance, if they
+  are no longer co-operating).
+</Accordion>
+
+  <Accordion title="My participant cannot have their randomization on the scheduled date">
+    This is why you should not enter the randomization date until the randomization actually takes place. After the pre-randomization lead-in weeks, the app shows either an on-time "waiting" window or a variable duration. If the randomization is late, the scheduled date might be off by days, weeks, or months. It is better to accurately record the real date.
+
+    Once you have discontinued the participant, you can enter the randomization date in the app. You will then be able to enter any later dates as needed.
+
+  </Accordion>
+
+  <Accordion title="Why is the app still asking my participant for data even though they have finished?">
+    The app is designed so it does not block data entry by a participant simply because research staff marked them as finished. For example, one of your colleagues might accidentally mark the participant as having exited the trial or enter an early "final" visit incorrectly. To protect against losing daily data that is still important, the app continues to allow data entry.
+
+    If the participant has gone beyond their planned "weekly" windows, they will not be asked weekly questions. If the participant has truly finished or exited and entered all required data, advise them to delete the app from their phone. Any extra data they enter by mistake will be documented, and the statistical analysis will only use the relevant date range.
+
+  </Accordion>
+</Accordions>
+
+## Technical Questions
+
+<Accordions>
+  <Accordion title="Can I use my phone instead of a tablet or computer?">
+    Yes, you can use your phone, although the screen size may not be ideal. Try turning it to landscape orientation. If the text does not rotate, you may need to unlock rotation on your phone.
+
+    **On iPhone**
+    1. Swipe down from the top-right corner of the screen to open Control Center
+    2. Tap the Portrait Orientation Lock button so that it shows as off (unlocked)
+
+    **On Android**
+    1. Swipe down from the top of the screen
+    2. Look for an icon labeled Portrait or Auto rotate, depending on your phone model
+    3. Tap to activate auto-rotation. It should become highlighted and now show as Auto rotate
+
+  </Accordion>
+
+{" "}
+<Accordion title="Why does the live-assist screen warn about time-zones?">
+  Internally, the app and server store time-stamps of data entry in UTC
+  (Coordinated Universal Time). However, to make it easy for participants, the
+  app uses their local time zone for entry prompts (e.g., "yesterday, 2pm
+  local"). If the participant changes time zone, the app will prompt them to
+  update and adapt accordingly. This can lead to slight differences in the dates
+  or times shown to staff versus what the participant sees or what is stored in
+  UTC.
+</Accordion>
+
+  <Accordion title="Why can the staff app not show the participant's timezone?">
+    The staff app could show it, but that might be more confusing. Instead, the staff app typically simplifies by displaying times in your own time zone. This works fine for small differences of a few hours, but if you and the participant are in very different zones (for example, on opposite sides of the Pacific), you may notice more discrepancies.
+  </Accordion>
+</Accordions>
+
+## Cards

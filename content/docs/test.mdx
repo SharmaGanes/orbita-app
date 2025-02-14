@@ -1,17 +1,261 @@
 ---
-title: Components
-description: Components
+title: Tutorial
+description: Welcome to the full tutorial for the Orbita App (For research staff)
 ---
 
-## Code Block
+import { Step, Steps } from "fumadocs-ui/components/steps";
 
-```js
-console.log('Hello World');
-```
+<Steps>
+<Step>
+
+## Staff Login
+
+<ImageZoom
+  src="/images/staff-login.png"
+  alt="Staff Login Page"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Enrolling New Patients
+
+Next let's enrol a new patient
+
+<ImageZoom
+  src="/images/enroll-patient.png"
+  alt="Enroll New Patient Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Creating a Practice Patient
+
+For training purposes, let's start by creating a practice patient. This will help you get familiar with the enrollment process. The steps are exactly the same whether you're enrolling a practice patient or a real participant, making this a perfect way to learn the system.
+
+<ImageZoom
+  src="/images/practice-enroll.png"
+  alt="Practice Patient Enrollment Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Installing the App
+
+Before we continue with enrollment, you'll need to help the patient install the app on their device. For iPhones, the process involves adding the web app to their home screen. This creates an app-like experience that's easy for patients to access.
+
+<ImageZoom
+  src="/images/install-app.png"
+  alt="Installing App on iPhone Instructions"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Recording Patient Password
+
+For security and patient support purposes, researchers must document the participant's password in their official case record form. This step is crucial as it:
+
+- Ensures the password is safely stored in the research records
+- Allows authorized staff to assist patients who may forget their login credentials
+- Maintains proper research documentation protocols
+
+<ImageZoom
+  src="/images/password-record.png"
+  alt="Password Recording Instructions"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Setting Up Password
+
+During this training session, we're using a simple password "orbita" for demonstration purposes. However, for real study participants, the system generates more secure passwords that look like this: "fz6nnvjq". These randomized passwords:
+
+- Contain a mix of letters and numbers
+- Are automatically generated for security
+- Are unique to each participant
+- Must be carefully recorded in the case record form
+
+<ImageZoom
+  src="/images/password-example.png"
+  alt="Password Example Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Configuring Patient Login
+
+After enrollment, the system generates a unique participant ID (example-10-22) and password that the patient will use to access the app. The patient should:
+
+- Use these exact credentials to log in on their device
+- Enter both the ID and password exactly as shown
+- Contact the research team if they have any login difficulties
+
+For this practice session, you can test the login process using your own phone.
+
+<ImageZoom
+  src="/images/patient-login.png"
+  alt="Patient Login Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Setting Up Participant Preferences
+
+Now that the participant is enrolled, we need to configure their app settings. This includes:
+
+1. Setting their preferred language (English in this example)
+2. Confirming they've received the privacy policy
+3. Defining their daily symptom tracking parameters
+
+<ImageZoom
+  src="/images/participant-config.png"
+  alt="Participant Configuration Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Configuring Symptom Tracking
+
+For this practice session, we'll configure a daily symptom tracking for chest pain. When entering the symptom description:
+
+- Make sure it works grammatically with both question formats shown
+- Be specific about the symptom (e.g., "chest pain" rather than just "pain")
+- Keep the description clear and concise
+
+<ImageZoom
+  src="/images/symptom-config.png"
+  alt="Symptom Configuration Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Setting Activity Levels
+
+After defining the main symptom (chest pain), we need to specify what constitutes different activity levels when the symptom occurs. The system provides pre-defined options, but you can customize these for your study:
+
+1. **Mild Activity**: Select activities that require minimal exertion
+
+   - For this example, we've chosen "walk indoors between rooms"
+   - This helps patients understand when to report mild symptom occurrence
+
+2. **Moderate Activity**: Choose activities requiring more effort
+   - We've selected "climb a flight of stairs or walk up a hill"
+   - This helps differentiate symptom severity during different exertion levels
+
+<ImageZoom
+  src="/images/activity-config.png"
+  alt="Activity Level Configuration Screen"
+  width={1000}
+  height={500}
+/>
+
+<ImageZoom
+  src="/images/activity-config-2.png"
+  alt="Activity Level Configuration Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Configuring Study Timeline
+
+The final step is to establish the study's timeline by configuring:
+
+1. **Start Date**: Choose when symptom recording should begin
+
+   - Select a specific date from the calendar
+   - This will be the first day participants start logging their symptoms
+
+2. **Follow-up Windows**: Define the monitoring periods
+   - Week 1: Initial monitoring period
+   - Week 2: Follow-up monitoring period
+   - These windows help structure the data collection timeline
+
+<ImageZoom
+  src="/images/date-config.png"
+  alt="Date Configuration Screen"
+  width={1000}
+  height={500}
+/>
+
+<ImageZoom
+  src="/images/date-config-2.png"
+  alt="Date Configuration Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+
+<Step>
+
+## Advanced Management Features
+
+The system provides additional features to manage participant engagement and status:
+
+1. **Trial Participation Status**
+
+   - Track whether participants are actively enrolled or have exited the trial
+   - Manage data collection permissions based on participation status
+   - Update participant visibility in the system
+
+2. **Training Verification**
+
+   - Monitor if participants have completed their app training
+   - Mark training completion status
+   - Ensure participants are prepared to use the system effectively
+
+3. **Technical Support**
+   - Access participant's authentication ID for troubleshooting
+   - Assist with technical issues more efficiently
+   - Maintain secure participant identification
+
+<ImageZoom
+  src="/images/advanced-features.png"
+  alt="Advanced Features Configuration Screen"
+  width={1000}
+  height={500}
+/>
+
+</Step>
+</Steps>
 
 ## Cards
-
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
-</Cards>
