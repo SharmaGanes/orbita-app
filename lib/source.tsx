@@ -1,4 +1,4 @@
-import React from "react";
+import type { ImgHTMLAttributes } from "react";
 import { docs } from "../source.config";
 import { loader } from "fumadocs-core/source";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
@@ -6,7 +6,5 @@ import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 export const source = loader({
   baseUrl: "/docs",
   source: docs.toFumadocsSource(),
-  img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
-    <ImageZoom {...props} />
-  ),
+  img: (props: ImgHTMLAttributes<HTMLImageElement>) => <ImageZoom {...props} />,
 });
