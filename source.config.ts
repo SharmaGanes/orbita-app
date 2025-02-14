@@ -10,7 +10,6 @@ export const docs = defineDocs({
 });
 
 export default defineConfig({
-  baseUrl: "/docs",
   mdxOptions: {
     // MDX options
   },
