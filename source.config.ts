@@ -2,7 +2,6 @@ import { defineDocs, defineConfig } from "fumadocs-mdx/config";
 
 export const docs = defineDocs({
   dir: "content/docs",
-  baseUrl: "/docs",
   rootDir: ".",
   schema: {
     title: { type: "string", required: true },
@@ -11,6 +10,7 @@ export const docs = defineDocs({
 });
 
 export default defineConfig({
+  baseUrl: "/docs",
   mdxOptions: {
     // MDX options
   },
