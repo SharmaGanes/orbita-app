@@ -27,13 +27,33 @@ export default async function Page(props: {
           components={{
             ...defaultMdxComponents,
             ImageZoom,
-            img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
-              <ImageZoom
-                {...props}
-                src={props.src as string}
-                alt={props.alt || "Documentation image"}
-              />
-            ),
+            img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
+              const { width, height, ...rest } = props;
+
+              // Convert string-based width/height to numbers, or `undefined` if invalid
+              const numericWidth =
+                typeof width === "string"
+                  ? parseInt(width, 10) || undefined
+                  : width;
+              const numericHeight =
+                typeof height === "string"
+                  ? parseInt(height, 10) || undefined
+                  : height;
+
+              return (
+                <ImageZoom
+                  // Spread other image props (e.g. className, style, etc.)
+                  {...rest}
+                  // Cast src to string to silence the "string | undefined" type error
+                  src={props.src as string}
+                  // Provide a fallback alt
+                  alt={props.alt || "Documentation image"}
+                  // Ensure width/height are numbers (or undefined)
+                  width={numericWidth}
+                  height={numericHeight}
+                />
+              );
+            },
           }}
         />
       </DocsBody>
